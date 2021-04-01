@@ -1,0 +1,133 @@
+{
+  "ModelName": "qumir-model",
+  "ModelMetadata": {
+    "Author": "mtr",
+    "DateCreated": "Jan 31, 2021, 02:37 PM",
+    "DateLastModified": "Jan 31, 2021, 03:11 PM",
+    "Description": "modelo 2021/01 para la DB de qumir",
+    "AWSService": "Amazon DynamoDB",
+    "Version": "2.0"
+  },
+  "DataModel": [
+    {
+      "TableName": "gardeners",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "user_id",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "activation_date",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "firstname",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "lastname",
+          "AttributeType": "S"
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      }
+    },
+    {
+      "TableName": "gardens",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "garden_id",
+          "AttributeType": "S"
+        },
+        "SortKey": {
+          "AttributeName": "gardener_id",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "type",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "description",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "creation_date",
+          "AttributeType": "S"
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      }
+    },
+    {
+      "TableName": "plants",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "plant_id",
+          "AttributeType": "S"
+        },
+        "SortKey": {
+          "AttributeName": "garden_id",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "plant_name",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "description",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "creation_date",
+          "AttributeType": "S"
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      }
+    },
+    {
+      "TableName": "actions",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "action_id",
+          "AttributeType": "S"
+        },
+        "SortKey": {
+          "AttributeName": "plant_id",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "action_name",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "action_description",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "action_value",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "action_date",
+          "AttributeType": "S"
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      }
+    }
+  ]
+}

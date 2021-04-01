@@ -1,0 +1,65 @@
+{
+    "resource": "/items",
+    "path": "/items",
+    "httpMethod": "GET",
+    "headers": {
+        "Accept": "applications/json",
+        "qumir-token": "tucara"
+    },
+    "multiValueHeaders": {
+        "Accept": [
+            "applications/json"
+        ],
+        "qumir-token": [
+            "tucara"
+        ]
+    },
+    "queryStringParameters": {
+        "param1": "value1",
+        "param2": "value2"
+    },
+    "multiValueQueryStringParameters": {
+        "param1": [
+            "value1"
+        ],
+        "param2": [
+            "value2"
+        ]
+    },
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "lsrak0",
+        "resourcePath": "/items",
+        "httpMethod": "GET",
+        "extendedRequestId": "aUyuHH6GIAMFS2Q=",
+        "requestTime": "06/Feb/2021:13:21:55 +0000",
+        "path": "/items",
+        "accountId": "921134211460",
+        "protocol": "HTTP/1.1",
+        "stage": "test-invoke-stage",
+        "domainPrefix": "testPrefix",
+        "requestTimeEpoch": 1612617715888,
+        "requestId": "c5772c05-00d4-4e65-af66-a09cf96ef4c8",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "cognitoIdentityId": null,
+            "apiKey": "test-invoke-api-key",
+            "principalOrgId": null,
+            "cognitoAuthenticationType": null,
+            "userArn": "arn:aws:iam::921134211460:user/mamatias",
+            "apiKeyId": "test-invoke-api-key-id",
+            "userAgent": "aws-internal/3 aws-sdk-java/1.11.901 Linux/4.9.230-0.1.ac.223.84.332.metal1.x86_64 OpenJDK_64-Bit_Server_VM/25.275-b01 java/1.8.0_275 vendor/Oracle_Corporation",
+            "accountId": "921134211460",
+            "caller": "AIDA5M57AUGCPY7DK54C5",
+            "sourceIp": "test-invoke-source-ip",
+            "accessKey": "ASIA5M57AUGCFV6VH45X",
+            "cognitoAuthenticationProvider": null,
+            "user": "AIDA5M57AUGCPY7DK54C5"
+        },
+        "domainName": "testPrefix.testDomainName",
+        "apiId": "mn6ujt3rtl"
+    },
+    "body": null,
+    "isBase64Encoded": false
+}
